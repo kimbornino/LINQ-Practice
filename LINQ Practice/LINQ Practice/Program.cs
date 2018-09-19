@@ -10,6 +10,7 @@ namespace LINQ_Practice
     {
         static void Main(string[] args)
         {
+         
         }
     }
 }
