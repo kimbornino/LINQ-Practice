@@ -8,14 +8,17 @@ namespace LINQ_Practice
 {
     class thCheck
     {
-        var words = new List<string>() { "the", "bike", "this", "it", "tenth", "mathematics" };
+        public void CheckForTh()
+        {
 
-        var thWords = words.Where(t => t.Contains("th"));
+            var words = new List<string>() { "the", "bike", "this", "it", "tenth", "mathematics" };
+
+            var thWords = words.Where(t => t.Contains("th"));
             foreach (var word in thWords)
             {
                 Console.WriteLine(word);
-               
+
             }
-    Console.ReadKey();
+        }
     }
 }
