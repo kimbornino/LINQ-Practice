@@ -10,14 +10,22 @@ namespace LINQ_Practice
     {
         static void Main(string[] args)
         {
-            var names = new List<string>() { "Mike", "Dan", "Scott", "Nick", "Mike" };
-            var noRepeats = names.Distinct();
-            foreach (var name in noRepeats)
-            {
-                Console.WriteLine(name);
-            }
-            Console.ReadKey();
 
+            Console.WriteLine(StringCount.GetStringCount("MISSissipPi"));
+            
+
+            List<string> Grades = new List<String>()
+            {
+                "80,100,92,89,65",
+                "93, 81, 78, 84, 69",
+                "73, 88, 83, 99, 64",
+                "98, 100, 66, 74, 55"
+            };
+
+            Console.WriteLine(GradeAverage.ClassGrades(Grades));
+            Console.ReadLine();
         }
+        
+
     }
 }
